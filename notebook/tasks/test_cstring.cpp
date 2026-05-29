@@ -1,4 +1,4 @@
-#include <fossil/pizza/framework.h>
+#include <fossil/maip/framework.h>
 #include "fossil/io/framework.h"
 
 FOSSIL_SUITE(cpp_cstring_challenges);

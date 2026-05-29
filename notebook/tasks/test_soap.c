@@ -1,4 +1,4 @@
-#include <fossil/pizza/framework.h>
+#include <fossil/maip/framework.h>
 #include "fossil/io/soap.h"
 
 FOSSIL_SUITE(c_soap_challenges);
