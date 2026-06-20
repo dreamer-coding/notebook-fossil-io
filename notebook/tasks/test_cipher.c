@@ -53,10 +53,10 @@ FOSSIL_TEST(c_test_cipher_stream) {
 }
 
 FOSSIL_TEST_GROUP(c_cipher_task_group) {
-    FOSSIL_TEST_ADD(c_cipher_tasks, c_test_cipher_encrypt);
-    FOSSIL_TEST_ADD(c_cipher_tasks, c_test_cipher_decrypt);
-    FOSSIL_TEST_ADD(c_cipher_tasks, c_test_cipher_key);
-    FOSSIL_TEST_ADD(c_cipher_tasks, c_test_cipher_stream);
+    FOSSIL_ADD_TEST(c_cipher_tasks, c_test_cipher_encrypt);
+    FOSSIL_ADD_TEST(c_cipher_tasks, c_test_cipher_decrypt);
+    FOSSIL_ADD_TEST(c_cipher_tasks, c_test_cipher_key);
+    FOSSIL_ADD_TEST(c_cipher_tasks, c_test_cipher_stream);
 
-    FOSSIL_TEST_REGISTER(c_cipher_tasks);
+    FOSSIL_ADD_SUITE(c_cipher_tasks);
 }

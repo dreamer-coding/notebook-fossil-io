@@ -55,10 +55,10 @@ FOSSIL_TEST(cpp_test_regex_free_match) {
 }
 
 FOSSIL_TEST_GROUP(cpp_regex_task_group) {
-    FOSSIL_TEST_ADD(cpp_regex_tasks, cpp_test_regex_compile);
-    FOSSIL_TEST_ADD(cpp_regex_tasks, cpp_test_regex_match);
-    FOSSIL_TEST_ADD(cpp_regex_tasks, cpp_test_regex_groups);
-    FOSSIL_TEST_ADD(cpp_regex_tasks, cpp_test_regex_free_match);
+    FOSSIL_ADD_TEST(cpp_regex_tasks, cpp_test_regex_compile);
+    FOSSIL_ADD_TEST(cpp_regex_tasks, cpp_test_regex_match);
+    FOSSIL_ADD_TEST(cpp_regex_tasks, cpp_test_regex_groups);
+    FOSSIL_ADD_TEST(cpp_regex_tasks, cpp_test_regex_free_match);
 
-    FOSSIL_TEST_REGISTER(cpp_regex_tasks);
+    FOSSIL_ADD_SUITE(cpp_regex_tasks);
 }

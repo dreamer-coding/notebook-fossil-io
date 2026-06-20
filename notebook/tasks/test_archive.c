@@ -51,10 +51,10 @@ FOSSIL_TEST(c_test_archive_extract_all) {
 }
 
 FOSSIL_TEST_GROUP(c_archive_task_group) {
-    FOSSIL_TEST_ADD(c_archive_tasks, c_test_archive_open);
-    FOSSIL_TEST_ADD(c_archive_tasks, c_test_archive_list);
-    FOSSIL_TEST_ADD(c_archive_tasks, c_test_archive_extract_file);
-    FOSSIL_TEST_ADD(c_archive_tasks, c_test_archive_extract_all);
+    FOSSIL_ADD_TEST(c_archive_tasks, c_test_archive_open);
+    FOSSIL_ADD_TEST(c_archive_tasks, c_test_archive_list);
+    FOSSIL_ADD_TEST(c_archive_tasks, c_test_archive_extract_file);
+    FOSSIL_ADD_TEST(c_archive_tasks, c_test_archive_extract_all);
 
-    FOSSIL_TEST_REGISTER(c_archive_tasks);
+    FOSSIL_ADD_SUITE(c_archive_tasks);
 }

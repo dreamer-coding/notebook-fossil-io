@@ -132,16 +132,16 @@ FOSSIL_TEST(c_test_cstring_json_normalize) {
 // Challenge Group Registration
 // --------------------------------------
 FOSSIL_TEST_GROUP(c_cstring_tests) {
-    FOSSIL_TEST_ADD(c_cstring_challenges, c_test_cstring_create_free);
-    FOSSIL_TEST_ADD(c_cstring_challenges, c_test_cstring_money_conversion);
-    FOSSIL_TEST_ADD(c_cstring_challenges, c_test_cstring_money_conversion_currency);
-    FOSSIL_TEST_ADD(c_cstring_challenges, c_test_cstring_token);
-    FOSSIL_TEST_ADD(c_cstring_challenges, c_test_cstring_case_functions);
-    FOSSIL_TEST_ADD(c_cstring_challenges, c_test_cstring_novelty_transforms);
-    FOSSIL_TEST_ADD(c_cstring_challenges, c_test_cstring_sub_reverse_contains);
-    FOSSIL_TEST_ADD(c_cstring_challenges, c_test_cstring_safe_operations);
-    FOSSIL_TEST_ADD(c_cstring_challenges, c_test_cstring_stream);
-    FOSSIL_TEST_ADD(c_cstring_challenges, c_test_cstring_json_normalize);
+    FOSSIL_ADD_TEST(c_cstring_challenges, c_test_cstring_create_free);
+    FOSSIL_ADD_TEST(c_cstring_challenges, c_test_cstring_money_conversion);
+    FOSSIL_ADD_TEST(c_cstring_challenges, c_test_cstring_money_conversion_currency);
+    FOSSIL_ADD_TEST(c_cstring_challenges, c_test_cstring_token);
+    FOSSIL_ADD_TEST(c_cstring_challenges, c_test_cstring_case_functions);
+    FOSSIL_ADD_TEST(c_cstring_challenges, c_test_cstring_novelty_transforms);
+    FOSSIL_ADD_TEST(c_cstring_challenges, c_test_cstring_sub_reverse_contains);
+    FOSSIL_ADD_TEST(c_cstring_challenges, c_test_cstring_safe_operations);
+    FOSSIL_ADD_TEST(c_cstring_challenges, c_test_cstring_stream);
+    FOSSIL_ADD_TEST(c_cstring_challenges, c_test_cstring_json_normalize);
 
-    FOSSIL_TEST_REGISTER(c_cstring_challenges);
+    FOSSIL_ADD_SUITE(c_cstring_challenges);
 }

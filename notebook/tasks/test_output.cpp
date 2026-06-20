@@ -73,10 +73,10 @@ FOSSIL_TEST(cpp_test_output_mini_tui) {
 // * * * * * * * * * * * * * * * * * * * * * * * *
 
 FOSSIL_TEST_GROUP(cpp_output_tests) {
-    FOSSIL_TEST_ADD(cpp_output_challenges, cpp_test_output_basic_printing);
-    FOSSIL_TEST_ADD(cpp_output_challenges, cpp_test_output_formatted_greeting);
-    FOSSIL_TEST_ADD(cpp_output_challenges, cpp_test_output_file);
-    FOSSIL_TEST_ADD(cpp_output_challenges, cpp_test_output_mini_tui);
+    FOSSIL_ADD_TEST(cpp_output_challenges, cpp_test_output_basic_printing);
+    FOSSIL_ADD_TEST(cpp_output_challenges, cpp_test_output_formatted_greeting);
+    FOSSIL_ADD_TEST(cpp_output_challenges, cpp_test_output_file);
+    FOSSIL_ADD_TEST(cpp_output_challenges, cpp_test_output_mini_tui);
 
-    FOSSIL_TEST_REGISTER(cpp_output_challenges);
+    FOSSIL_ADD_SUITE(cpp_output_challenges);
 }

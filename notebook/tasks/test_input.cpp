@@ -101,16 +101,16 @@ FOSSIL_TEST(cpp_test_input_keybindings) {
 // * * * * * * * * * * * * * * * * * * * * * * * *
 
 FOSSIL_TEST_GROUP(cpp_input_tests) {
-    FOSSIL_TEST_ADD(cpp_input_challenges, cpp_test_input_getc);
-    FOSSIL_TEST_ADD(cpp_input_challenges, cpp_test_input_gets_from_stream);
-    FOSSIL_TEST_ADD(cpp_input_challenges, cpp_test_input_gets_from_stream_ex);
-    FOSSIL_TEST_ADD(cpp_input_challenges, cpp_test_input_scanf);
-    FOSSIL_TEST_ADD(cpp_input_challenges, cpp_test_input_validate_buffer);
-    FOSSIL_TEST_ADD(cpp_input_challenges, cpp_test_input_validate_types);
-    FOSSIL_TEST_ADD(cpp_input_challenges, cpp_test_input_sanitize_string);
-    FOSSIL_TEST_ADD(cpp_input_challenges, cpp_test_input_display_menu);
-    FOSSIL_TEST_ADD(cpp_input_challenges, cpp_test_input_show_progress);
-    FOSSIL_TEST_ADD(cpp_input_challenges, cpp_test_input_keybindings);
+    FOSSIL_ADD_TEST(cpp_input_challenges, cpp_test_input_getc);
+    FOSSIL_ADD_TEST(cpp_input_challenges, cpp_test_input_gets_from_stream);
+    FOSSIL_ADD_TEST(cpp_input_challenges, cpp_test_input_gets_from_stream_ex);
+    FOSSIL_ADD_TEST(cpp_input_challenges, cpp_test_input_scanf);
+    FOSSIL_ADD_TEST(cpp_input_challenges, cpp_test_input_validate_buffer);
+    FOSSIL_ADD_TEST(cpp_input_challenges, cpp_test_input_validate_types);
+    FOSSIL_ADD_TEST(cpp_input_challenges, cpp_test_input_sanitize_string);
+    FOSSIL_ADD_TEST(cpp_input_challenges, cpp_test_input_display_menu);
+    FOSSIL_ADD_TEST(cpp_input_challenges, cpp_test_input_show_progress);
+    FOSSIL_ADD_TEST(cpp_input_challenges, cpp_test_input_keybindings);
 
-    FOSSIL_TEST_REGISTER(cpp_input_challenges);
+    FOSSIL_ADD_SUITE(cpp_input_challenges);
 }

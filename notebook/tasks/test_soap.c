@@ -132,16 +132,16 @@ FOSSIL_TEST(c_test_soap_full_pipeline) {
 // Register All Tests
 // --------------------------------------
 FOSSIL_TEST_GROUP(c_soap_tests) {
-    FOSSIL_TEST_ADD(c_soap_challenges, c_test_soap_sanitize_basic);
-    FOSSIL_TEST_ADD(c_soap_challenges, c_test_soap_suggest_alternatives);
-    FOSSIL_TEST_ADD(c_soap_challenges, c_test_soap_detect_tone);
-    FOSSIL_TEST_ADD(c_soap_challenges, c_test_soap_grammar_check_and_correct);
-    FOSSIL_TEST_ADD(c_soap_challenges, c_test_soap_detect_ragebait_clickbait_spam);
-    FOSSIL_TEST_ADD(c_soap_challenges, c_test_soap_detect_social_political);
-    FOSSIL_TEST_ADD(c_soap_challenges, c_test_soap_detect_hype_and_marketing);
-    FOSSIL_TEST_ADD(c_soap_challenges, c_test_soap_detect_sarcasm_formality_neutral);
-    FOSSIL_TEST_ADD(c_soap_challenges, c_test_soap_custom_filter);
-    FOSSIL_TEST_ADD(c_soap_challenges, c_test_soap_full_pipeline);
+    FOSSIL_ADD_TEST(c_soap_challenges, c_test_soap_sanitize_basic);
+    FOSSIL_ADD_TEST(c_soap_challenges, c_test_soap_suggest_alternatives);
+    FOSSIL_ADD_TEST(c_soap_challenges, c_test_soap_detect_tone);
+    FOSSIL_ADD_TEST(c_soap_challenges, c_test_soap_grammar_check_and_correct);
+    FOSSIL_ADD_TEST(c_soap_challenges, c_test_soap_detect_ragebait_clickbait_spam);
+    FOSSIL_ADD_TEST(c_soap_challenges, c_test_soap_detect_social_political);
+    FOSSIL_ADD_TEST(c_soap_challenges, c_test_soap_detect_hype_and_marketing);
+    FOSSIL_ADD_TEST(c_soap_challenges, c_test_soap_detect_sarcasm_formality_neutral);
+    FOSSIL_ADD_TEST(c_soap_challenges, c_test_soap_custom_filter);
+    FOSSIL_ADD_TEST(c_soap_challenges, c_test_soap_full_pipeline);
 
-    FOSSIL_TEST_REGISTER(c_soap_challenges);
+    FOSSIL_ADD_SUITE(c_soap_challenges);
 }

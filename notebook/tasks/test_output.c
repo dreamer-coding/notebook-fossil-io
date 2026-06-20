@@ -73,10 +73,10 @@ FOSSIL_TEST(c_test_output_mini_tui) {
 // * * * * * * * * * * * * * * * * * * * * * * * *
 
 FOSSIL_TEST_GROUP(c_output_tests) {
-    FOSSIL_TEST_ADD(c_output_challenges, c_test_output_basic_printing);
-    FOSSIL_TEST_ADD(c_output_challenges, c_test_output_formatted_greeting);
-    FOSSIL_TEST_ADD(c_output_challenges, c_test_output_file);
-    FOSSIL_TEST_ADD(c_output_challenges, c_test_output_mini_tui);
+    FOSSIL_ADD_TEST(c_output_challenges, c_test_output_basic_printing);
+    FOSSIL_ADD_TEST(c_output_challenges, c_test_output_formatted_greeting);
+    FOSSIL_ADD_TEST(c_output_challenges, c_test_output_file);
+    FOSSIL_ADD_TEST(c_output_challenges, c_test_output_mini_tui);
 
-    FOSSIL_TEST_REGISTER(c_output_challenges);
+    FOSSIL_ADD_SUITE(c_output_challenges);
 }

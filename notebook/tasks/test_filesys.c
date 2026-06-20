@@ -52,10 +52,10 @@ FOSSIL_TEST(c_test_filesys_delete) {
 }
 
 FOSSIL_TEST_GROUP(c_filesys_task_group) {
-    FOSSIL_TEST_ADD(c_filesys_tasks, c_test_filesys_exists);
-    FOSSIL_TEST_ADD(c_filesys_tasks, c_test_filesys_read);
-    FOSSIL_TEST_ADD(c_filesys_tasks, c_test_filesys_write);
-    FOSSIL_TEST_ADD(c_filesys_tasks, c_test_filesys_delete);
+    FOSSIL_ADD_TEST(c_filesys_tasks, c_test_filesys_exists);
+    FOSSIL_ADD_TEST(c_filesys_tasks, c_test_filesys_read);
+    FOSSIL_ADD_TEST(c_filesys_tasks, c_test_filesys_write);
+    FOSSIL_ADD_TEST(c_filesys_tasks, c_test_filesys_delete);
 
-    FOSSIL_TEST_REGISTER(c_filesys_tasks);
+    FOSSIL_ADD_SUITE(c_filesys_tasks);
 }

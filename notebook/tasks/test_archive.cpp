@@ -51,10 +51,10 @@ FOSSIL_TEST(cpp_test_archive_extract_all) {
 }
 
 FOSSIL_TEST_GROUP(cpp_archive_task_group) {
-    FOSSIL_TEST_ADD(cpp_archive_tasks, cpp_test_archive_open);
-    FOSSIL_TEST_ADD(cpp_archive_tasks, cpp_test_archive_list);
-    FOSSIL_TEST_ADD(cpp_archive_tasks, cpp_test_archive_extract_file);
-    FOSSIL_TEST_ADD(cpp_archive_tasks, cpp_test_archive_extract_all);
+    FOSSIL_ADD_TEST(cpp_archive_tasks, cpp_test_archive_open);
+    FOSSIL_ADD_TEST(cpp_archive_tasks, cpp_test_archive_list);
+    FOSSIL_ADD_TEST(cpp_archive_tasks, cpp_test_archive_extract_file);
+    FOSSIL_ADD_TEST(cpp_archive_tasks, cpp_test_archive_extract_all);
 
-    FOSSIL_TEST_REGISTER(cpp_archive_tasks);
+    FOSSIL_ADD_SUITE(cpp_archive_tasks);
 }

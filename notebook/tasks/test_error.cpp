@@ -114,16 +114,16 @@ FOSSIL_TEST(cpp_test_error_ti_model_failure) {
 // * * * * * * * * * * * * * * * * * * * * * * * *
 
 FOSSIL_TEST_GROUP(cpp_error_tests) {
-    FOSSIL_TEST_ADD(cpp_error_challenges, cpp_test_error_print_what);
-    FOSSIL_TEST_ADD(cpp_error_challenges, cpp_test_error_report_with_format);
-    FOSSIL_TEST_ADD(cpp_error_challenges, cpp_test_error_switch_handling);
-    FOSSIL_TEST_ADD(cpp_error_challenges, cpp_test_error_return_code_function);
-    FOSSIL_TEST_ADD(cpp_error_challenges, cpp_test_error_log_multiple);
-    FOSSIL_TEST_ADD(cpp_error_challenges, cpp_test_error_custom);
-    FOSSIL_TEST_ADD(cpp_error_challenges, cpp_test_error_recovery);
-    FOSSIL_TEST_ADD(cpp_error_challenges, cpp_test_error_network_or_hardware);
-    FOSSIL_TEST_ADD(cpp_error_challenges, cpp_test_error_security_incident);
-    FOSSIL_TEST_ADD(cpp_error_challenges, cpp_test_error_ti_model_failure);
+    FOSSIL_ADD_TEST(cpp_error_challenges, cpp_test_error_print_what);
+    FOSSIL_ADD_TEST(cpp_error_challenges, cpp_test_error_report_with_format);
+    FOSSIL_ADD_TEST(cpp_error_challenges, cpp_test_error_switch_handling);
+    FOSSIL_ADD_TEST(cpp_error_challenges, cpp_test_error_return_code_function);
+    FOSSIL_ADD_TEST(cpp_error_challenges, cpp_test_error_log_multiple);
+    FOSSIL_ADD_TEST(cpp_error_challenges, cpp_test_error_custom);
+    FOSSIL_ADD_TEST(cpp_error_challenges, cpp_test_error_recovery);
+    FOSSIL_ADD_TEST(cpp_error_challenges, cpp_test_error_network_or_hardware);
+    FOSSIL_ADD_TEST(cpp_error_challenges, cpp_test_error_security_incident);
+    FOSSIL_ADD_TEST(cpp_error_challenges, cpp_test_error_ti_model_failure);
 
-    FOSSIL_TEST_REGISTER(cpp_error_challenges);
+    FOSSIL_ADD_SUITE(cpp_error_challenges);
 }
